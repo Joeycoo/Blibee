@@ -1,21 +1,8 @@
-## 关于DncVueSample
+## 关于Blibee
 
-**VncVueSample**由**码友网**(https://codedefault.com)发布并提供更新支持。
 
-作者:Rector
+**Blibee：** 是一个基于Vue.js + iview 前端框架搭建的后台管理系统模板，适用于如：OA,CRM,CMS等管理系统的后台开发。 
 
-演示地址：https://codedefault.github.io/DncVueSample/
-
-**DncVueSample：** 是一个基于Vue.js + iview 前端框架搭建的后台管理系统模板，适用于如：OA,CRM,CMS等管理系统的后台开发。 
-
-## 模板简介
-
-### 版本信息
-
-**DncVueSample**当前依赖的组件的版本信息如下：
-
-**Vue.js:** 2.5.17
-**iview:** 3.1.0 
 
 ### 布局和菜单
 
@@ -57,19 +44,3 @@
 当点击每个选项卡时，左侧菜单会自动跟踪到当前打开的菜单上。
 
 选项卡切换时，支持切换动画效果，视觉体验非常不错。 
-
-### 结束语
-
- DncVueSample是一个极简的基于Vue.js + iview 实现的静态后台管理系统模板，她仅是一个后台管理系统模板的雏形UI，不涉及系统功能，但所谓“麻雀虽小五脏俱全”，选择DncVueSample作为后台管理系统的初始模板，可以帮助使用者快速地开始项目的开端UI框架的搭建。
-
-> **注：DncVueSample目前没有适配移动端设备和IE10以下古老的浏览器，所以请在PC设备中使用现代浏览器预览和使用。**
-
-### 代码开源
-
-没错，DncVueSample是开源的，你可以使用DncVueSample模板框架做任何的集成或者开发。
-
-源代码托管地址: https://github.com/codedefault/DncVueSample 
-
-**Demo:** [DncVueSample演示地址][1]
-
-[1]: https://codedefault.github.io/DncVueSample/
