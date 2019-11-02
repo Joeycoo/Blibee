@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="referrer" content="no-referrer">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+    <link rel="stylesheet" type="text/css" href="assets/iview/iview-3.1.0/styles/iview.css" />
+	<link rel="stylesheet" href="css/Blibeeapp.css">
+	<link rel="stylesheet" href="css/custom.css">
+      <script src="assets/vue/vue-2.5.17.min.js"></script>
+    <script src="assets/iview/iview-3.1.0/iview.min.js"></script>
+	<title>内部账号登录</title>
+</head>
+  <body>
+ 
+
+            <div id="app" class="form-login">
+
+    
+    
+    <h2>后台系统</h2>
+
+        <form method="post" action="/check">
+
+        <input type="hidden" name="csrf_token" value="25a9c42c939320eaa4332d10a1960868b045e9c161ff16c8dfd2299c0972"/>
+        <label for="form-username" >用户名</label> 
+               <input type="text" placeholder="请输入登录名" v-model="loginViewModel.userName" />
+        <label for="form-password" >密码</label> 
+               <input type="password" placeholder="请输入密码" v-model="loginViewModel.password" />
+        
+                    <label><input type="checkbox" name="remember_me" class="" value="1" checked="checked">&nbsp;下次自动登录</label>        
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary btn-block">登录</button>
+        </div>
+                    <div class="reset-password">
+                <a href="forgot-password.html" class="" title='' >忘记密码？</a>            </div>
+            </form>
+    
+    <div class="form-actions">
+    <a class="btn btn-default btn-block" title='' id="btn_login" @click="handleLogin">第三方合作伙伴登录</a></div>
+</div>
+  <script type="text/javascript">
+        var vm = new Vue({
+            el: "#app",
+            data: function () {
+                return {
+                    loadingbar: {
+                        show: false
+                    },
+                    loginViewModel: {
+                        userName: "chen.chenyuwei",
+                        password: "bianlifeng"
+                    }
+                }
+            },
+            methods: {
+                handleLogin: function () {
+                    var target = this;
+                    target.doLogin();
+                    setTimeout(function () {
+                        target.completeLogin();
+                    }, 2000);
+                },
+                doLogin: function () {
+                    this.loadingbar.show = true;
+                },
+                completeLogin: function () {
+                    this.loadingbar.show = false;
+                    this.$Message.success("登录成功");
+                    //设置用户TOKEN于localStorage中,系统首页依据此TOKEN来验证是否已登录
+                    localStorage.setItem("dnc_token", "user_info");
+                    setTimeout(function () {
+                        window.location.href = "index.html"
+                    }, 1000);
+                }
+            }
+        });
+    </script>
+        </body>
+</html>
