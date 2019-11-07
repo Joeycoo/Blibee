@@ -27,9 +27,9 @@
                 isCollapsed: false,
                 menu: [
                     {
-                        title: "虫效系统", name: "1", icon: "logo-github", menuItem: [
+                        title: "虫效系统", name: "1", icon: "md-globe", menuItem: [
                             { label: "任务申请", name: "1-1", href: "pages/account/user/list.html", icon: "logo-tux", closable: true},
-                            { label: "我的应用", name: "1-2", href: "pages/account/resource/list.html", icon: "logo-tux", closable: true },
+                            { label: "我的应用", name: "1-2", href: "pages/account/resource/application.html", icon: "logo-tux", closable: true },
                             { label: "应用树管理", name: "1-3", href: "pages/account/role/list.html", icon: "logo-tux", closable: true },
                             { label: "持续构建", name: "1-4", href: "`", icon: "logo-tux", closable: true },
                             
