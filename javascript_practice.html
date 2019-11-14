@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8">
+	<title>javascript学习笔记</title>
+</head>
+<body>
+<script type="text/javascript">
+/* 1
+   Developer：chen
+   Time：20点17分
+   Effect：以下程序运行test()和new test()的结果分别是什么？
+   new test() 里的 this ，指向的就是你用 new test() 所返回的对象，在这里，就是 obj ,而这个对象，你给他定义 a 属性了么？没有！所以 this.a 返回 undefined；
+*/
+// var a = 5;
+// function test() {
+// 	this.a = 'a' ;
+// 	var a;
+// a = 0;
+// console.log(a);//0,0
+// console.log(this.a);//5,undefind
+// var a;
+// console.log(a);//0,0
+// }
+// new test();
+
+// 考虑下面代码：
+// var a = 5;
+// function test() {
+// 	var  a;
+// 	a = 0;
+// 	console.log(a);
+// 	this.a = 22;
+// 	console.log(this.a);
+// 	console.log(a);
+// }
+// var obj = new test();
+// console.log(obj.a);
+// 最后的 log 出来的 obj.a 就证明了这个 obj 和你在 new test() 里面的 this 是同一个对象；
+
+// ------------------------------------------------------------------------------------
+
+
+
+
+/* 2
+   Developer：chen
+   Time：20点59分
+   Effect：js预编译和语法
+*/
+// function test() {
+// 	console.log(a);//undefined
+//  	var a  = 1;
+// 	console.log(a);//1
+// 	console.log(hello);//hello  is not defined
+// }
+//  new test();
+
+
+//------------------------------------------------------------------------------------------------
+
+/*3 
+   Developer：chen
+   Time：
+   Effect：
+*/
+// function demo() {
+// 	var test;
+// 	test();
+// 	function test() {
+// 		console.log(1);
+// 	}
+// }
+// demo();
+//------------------------------------------------------------------------------------------------------
+/* 4
+   Developer：chen
+   Time：
+   Effect：
+*/
+var bar = {a : '002'};
+function demo () {
+	bar.a = 'a';
+	Object.prototype.b = 'b';
+	return function inner() {
+		console.log(bar.a);
+		console.log(bar.b);
+	}
+}
+demo()();
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+/* 
+   Developer：chen
+   Time：
+   Effect：
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
