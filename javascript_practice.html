@@ -62,32 +62,69 @@
 /*3 
    Developer：chen
    Time：
-   Effect：
+   Effect： 原型链精讲
 */
-// function demo() {
-// 	var test;
-// 	test();
-// 	function test() {
-// 		console.log(1);
-// 	}
+// var A = function() {};
+// A.prototype.n = 1;
+// var b = new A();
+// A.prototype = {
+// 	n: 2,
+// 	m: 3
 // }
-// demo();
+// var c = new A();
+// console.log(b.n);//1
+// console.log(b.m);//undefined
+// console.log(c.n);//2
+// console.log(c.m);//3
+
+// var F = function() {};
+// Object.prototype.a = function() {
+// 	console.log('a');
+// };
+// Function.prototype.b = function() {
+// 	console.log('b');
+// }
+// var f = new F();
+// f.a();//a
+// f.b();//not defined
+// F.a();//a
+// F.b();//b
+
+// function Person(name) {
+// 	this.name = name;
+// }
+// let p = new Person('Tom');
+// //1. p.__proto__等于什么？
+// //2. Person.__proto__等于什么？
+
+// var foo = {};
+// F = function() {};
+// Object.prototype.a = 'value a';
+// Function.prototype.b = 'value b';
+// console.log(foo.a);
+// console.log(foo.b);
+// console.log(F.a);
+// console.log(F.b);
+
+// function Person(name, age) {
+//   this.name = name;
+//   this.age = age;
+//   this.eat = function() {
+// }
+
+// let p1 = new Person("jsliang", 24);
+// let p2 = new Person("jsliang", 24);
+
+// console.log(p1.eat == p2.eat); // false
+
+
 //------------------------------------------------------------------------------------------------------
 /* 4
    Developer：chen
    Time：
    Effect：
 */
-var bar = {a : '002'};
-function demo () {
-	bar.a = 'a';
-	Object.prototype.b = 'b';
-	return function inner() {
-		console.log(bar.a);
-		console.log(bar.b);
-	}
-}
-demo()();
+
 
 /* 
    Developer：chen
