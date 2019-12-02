@@ -27,36 +27,36 @@
                 isCollapsed: false,
                 menu: [
                     {
-                        title: "虫效系统", name: "1", icon: "md-globe", menuItem: [
-                            { label: "任务申请", name: "1-1", href: "pages/account/user/list.html", icon: "logo-tux", closable: true},
-                            { label: "我的应用", name: "1-2", href: "pages/account/resource/application.html", icon: "logo-tux", closable: true },
-                            { label: "应用树管理", name: "1-3", href: "pages/account/role/list.html", icon: "logo-tux", closable: true },
-                            { label: "持续构建", name: "1-4", href: "`", icon: "logo-tux", closable: true },
+                        title: "个人任务", name: "1", icon: "ios-cafe", menuItem: [
+                            { label: "任务申请", name: "1-1", href: "pages/account/user/list.html", icon: "md-create", closable: true},
+                            { label: "我的应用", name: "1-2", href: "pages/account/resource/application.html", icon: "ios-flag", closable: true },
+                            { label: "应用树管理", name: "1-3", href: " ", icon: "ios-git-branch", closable: true },
+                            { label: "持续构建", name: "1-4", href: " ", icon: "ios-globe-outline", closable: true },
                             
                         ]
                     },
                     {
-                        title: "系统管理", name: "2", icon: "logo-github", menuItem: [
-                            { label: "权限管理", name: "2-1", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "组织机构", name: "2-2", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "角色管理", name: "2-3", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "基础设置", name: "2-4", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "指标类别", name: "2-5", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "用户管理", name: "2-6", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "模块管理", name: "2-7", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "人员导入", name: "2-8", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "流程申请", name: "2-9", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "流程监管", name: "2-10", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "发布消息", name: "2-11", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "职位管理", name: "2-12", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true },
-                            { label: "系数管理", name: "2-13", href: "pages/basic/settings/index.html", icon: "logo-windows", closable: true },
-                            { label: "系统环境", name: "2-14", href: "pages/basic/settings/evn.html", icon: "logo-windows", closable: true }
+                        title: "系统功能", name: "2", icon: "md-filing", menuItem: [
+                            { label: "权限管理", name: "2-1", href: " ", icon: "ios-lock", closable: true },
+                            { label: "组织机构", name: "2-2", href: " ", icon: "ios-people", closable: true },
+                            { label: "角色管理", name: "2-3", href: " ", icon: "md-person", closable: true },
+                            { label: "项目管理", name: "2-4", href: " ", icon: "ios-browsers", closable: true },
+                            { label: "技术值班", name: "2-5", href: " ", icon: "md-clipboard", closable: true },
+                            { label: "账号解锁", name: "2-6", href: " ", icon: "md-key", closable: true },
+                            { label: "人事系统", name: "2-7", href: " ", icon: "md-contacts", closable: true },
+                            { label: "人员导入", name: "2-8", href: " ", icon: "ios-contacts", closable: true },
+                            { label: "流程申请", name: "2-9", href: " ", icon: "ios-add-circle", closable: true },
+                            { label: "流程监控", name: "2-10", href: " ", icon: "md-medal", closable: true },
+                            { label: "模块管理", name: "2-11", href: " ", icon: "md-grid", closable: true },
+                            { label: "天眼系统", name: "2-12", href: " ", icon: "md-globe", closable: true },
+                            { label: "任务系统", name: "2-13", href: " ", icon: "ios-albums", closable: true },
+                            { label: "消息发布", name: "2-14", href: " ", icon: "md-megaphone", closable: true }
                         ]
                     },
                     {
-                        title: "统计分析", name: "3", icon: "logo-github", menuItem: [
-                            { label: "用户活跃度", name: "3-1", href: "pages/statistics/user/active.html", icon: "logo-windows", closable: true },
-                            { label: "销售报表", name: "3-2", href: "pages/statistics/sales/order.html", icon: "logo-windows", closable: true }
+                        title: "统计分析", name: "3", icon: "md-paper", menuItem: [
+                            { label: "考勤统计", name: "3-1", href: " ", icon: "md-clipboard", closable: true },
+                            { label: "效绩报告", name: "3-2", href: " ", icon: "md-list-box", closable: true }
                         ]
                     }
                 ],
